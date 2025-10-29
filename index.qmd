@@ -1,0 +1,35 @@
+---
+title: "Home"
+---
+
+<img src="images/MVO07409.jpg" class="profile-pic" alt="Photo of Dr. Travis J. Wiltshire">
+
+# Dr. Travis J. Wiltshire
+
+**Associate Professor of Computational Cognitive Science, Tilburg University**
+
+I am an interdisciplinary applied cognitive scientist focusing on understanding high-level cognitive processes (e.g., collaborative problem solving, social cognition) during human interaction with social and technological environments. I primarily study these phenomena from a Complex Dynamical Systems perspective, which is a quantitative approach to characterize how interacting components of a system change and coordinate over time. My research aims to examine multiple scales of analysis (e.g., behavior, cognition, and physiology) to explain the functional coordination of a system's components as they span the boundaries of individuals and technologies in support of collaborative interactions.
+
+
+
+
+------------------------------------------------------------------------
+
+## 🎓 Education
+
+-   Ph.D. in Modeling & Simulation, 2015, University of Central Florida
+
+-   PGC in Cognitive Science, 2015, University of Central Florida
+
+-   M.S. in Human Factors & Systems, 2012, Embry-Riddle Aeronautical University
+
+-   B.S. in Psychology, 2009, University of Central Florida
+
+## 🧠 Interests
+
+-   Teams
+-   Collaboration
+-   Complex Dynamical Systems
+-   Coordination
+-   Social Cognition
+-   Methodology & Statistics

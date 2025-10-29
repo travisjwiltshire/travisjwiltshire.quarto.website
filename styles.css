@@ -1,0 +1,23 @@
+@import url('https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css');
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+a {
+  color: #00796b;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img.profile-pic {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1em auto;
+}

@@ -1,0 +1,17 @@
+---
+title: "Publications"
+format: 
+  html:
+    toc: false       # hide table of contents (optional)
+bibliography: pubs.bib
+csl: apa.csl
+nocite: "@*"
+link-citations: true
+sort: year desc
+---
+
+
+::: {#refs}
+:::
+
+

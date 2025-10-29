@@ -1,0 +1,19 @@
+---
+title: "Curriculum Vitae"
+---
+
+# Curriculum Vitae
+
+A PDF version of my CV can be downloaded [here](cv.pdf).
+
+## Education
+- PhD in Environmental Economics, Example University (2020)
+- MSc in Economics, University of Somewhere (2015)
+
+## Academic Positions
+- Assistant Professor, Example University (2021–present)
+
+## Research Interests
+- Environmental Policy
+- Behavioral Economics
+- Climate Change Adaptation

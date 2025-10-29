@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Dr. Travis J. Wiltshire"
+  description: "Academic website of Dr. Travis J. Wiltshire, Computational Cognitive Science, Tilburg University."
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Publications"
+        href: publications.qmd
+    right:
+      - icon: github
+        href: https://github.com/travisjwiltshire
+      - text: "<i class='ai ai-google-scholar'></i>"
+        href: https://scholar.google.com/citations?user=JFjMvx0AAAAJ&hl=en
+        aria-label: "Google Scholar"
+      - text: "<i class='ai ai-osf'></i>"
+        href: https://osf.io/2p3wz/
+        aria-label: "OSF"
+      - text: "<img src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg' style='height:20px; vertical-align:middle;' alt='Bluesky'>"
+        href: https://bsky.app/profile/tjwiltshire.bsky.social
+        aria-label: "Bluesky"
+      - icon: music-note-beamed
+        href: https://whenwavescollapse.bandcamp.com/
+        aria-label: "Bandcamp"
+      - icon: envelope
+        href: mailto:t.j.wiltshire@tilburguniversity.edu
+        aria-label: "Email"
+
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+    link-external-newwindow: true
