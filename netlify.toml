@@ -1,7 +1,18 @@
+# netlify.toml
+
 [build]
   publish = "_site"
   command = """
-  curl -L -o quarto.deb https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb
-  apt-get update && apt-get install -y ./quarto.deb
+  # Install Quarto CLI in local directory
+  QUARTO_VERSION="latest"  # or "latest" if you want
+  TGZ="quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
+  curl -L -o "$TGZ" "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/${TGZ}"
+  tar -xzf "$TGZ"
+  mkdir -p "$HOME/quarto"
+  mv "quarto-${QUARTO_VERSION}"/* "$HOME/quarto/"
+  export PATH="$HOME/quarto/bin:$PATH"
+  
+  # Render the site
+  quarto --version
   quarto render
   """
