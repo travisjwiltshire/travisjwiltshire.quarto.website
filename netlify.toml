@@ -1,7 +1,15 @@
 # netlify.toml
+
 [build]
+  # Directory Netlify will publish after build
   publish = "_site"
+  # Command to render your Quarto site
   command = "quarto render"
 
 [build.environment]
+  # Optional: pin a version or use "latest"
   QUARTO_VERSION = "latest"
+
+# Use the official Quarto plugin to automatically install Quarto
+[[plugins]]
+  package = "@quarto/netlify-plugin-quarto"
