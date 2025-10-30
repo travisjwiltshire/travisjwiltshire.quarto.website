@@ -22,13 +22,13 @@ I am an interdisciplinary applied cognitive scientist focusing on understanding 
 
 -   B.S. in Psychology, 2009, University of Central Florida
 
-## 🧠 Interests
+## 🧠 Research Interests
 
 -   Teams
 -   Collaboration
 -   Complex Dynamical Systems
 -   Coordination
--   Social Cognition
+-   Social Cognition and Interaction
 -   Methodology & Statistics
 
 ## 💻 Software
