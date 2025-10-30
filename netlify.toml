@@ -1,14 +1,14 @@
 # netlify.toml
-
 [build]
-  # Build command: install Quarto CLI and then render the site
   command = """
   bash -c '
     set -euo pipefail
-    QUARTO_VERSION="1.10.4"
+    echo "Fetching latest Quarto release version..."
+    QUARTO_VERSION=$(curl -s https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest | grep -Po '"tag_name": "\\K[^"]+')
+    QUARTO_VERSION=${QUARTO_VERSION#v}  # strip leading v if present
     TGZ="quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
     URL="https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/${TGZ}"
-    echo "Installing Quarto ${QUARTO_VERSION}..."
+    echo "Installing Quarto ${QUARTO_VERSION} from ${URL}..."
     curl -fsSL -o "${TGZ}" "${URL}"
     tar -xzf "${TGZ}"
     mkdir -p "$HOME/quarto"
@@ -18,6 +18,4 @@
     quarto render
   '
   """
-  
-  # Folder where the rendered site will be published
-  publish = "_site"  # change this if your Quarto site outputs elsewhere
+  publish = "_site"
