@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  publish = "_site"
+  publish = "docs"
   command = """
   # Fetch the latest Quarto release tag from GitHub
   LATEST=$(curl -s https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest | grep -Po '\"tag_name\": \"\\K[^\"]+')
