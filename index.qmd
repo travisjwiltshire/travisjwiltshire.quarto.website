@@ -2,16 +2,13 @@
 title: "Home"
 ---
 
-<img src="images/MVO07409.jpg" class="profile-pic" alt="Photo of Dr. Travis J. Wiltshire">
+<img src="images/MVO07409.jpg" alt="Photo of Dr. Travis J. Wiltshire" class="profile-pic"/>
 
 # Dr. Travis J. Wiltshire
 
 **Associate Professor of Computational Cognitive Science, Tilburg University**
 
 I am an interdisciplinary applied cognitive scientist focusing on understanding high-level cognitive processes (e.g., collaborative problem solving, social cognition) during human interaction with social and technological environments. I primarily study these phenomena from a Complex Dynamical Systems perspective, which is a quantitative approach to characterize how interacting components of a system change and coordinate over time. My research aims to examine multiple scales of analysis (e.g., behavior, cognition, and physiology) to explain the functional coordination of a system's components as they span the boundaries of individuals and technologies in support of collaborative interactions.
-
-
-
 
 ------------------------------------------------------------------------
 
@@ -33,3 +30,11 @@ I am an interdisciplinary applied cognitive scientist focusing on understanding 
 -   Coordination
 -   Social Cognition
 -   Methodology & Statistics
+
+## 💻 Software
+
+-   [multiSyncPy](https://pypi.org/project/multiSyncPy/) - Python package for quantifying multivariate synchronization metrics
+
+-   [fractalRegression](https://github.com/aaronlikens/fractalRegression) - R package for various fractal analyses
+
+-   [SEAMLess](https://github.com/travisjwiltshire/SEAMLess) - An R based Seamless Environment and Methods for Interactive Lessons
