@@ -3,16 +3,23 @@
 [build]
   publish = "_site"
   command = """
-  # Install Quarto CLI in local directory
-  QUARTO_VERSION="latest"  # or "latest" if you want
+  # Fetch the latest Quarto release tag from GitHub
+  LATEST=$(curl -s https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest | grep -Po '"tag_name": "\K[^"]+')
+  QUARTO_VERSION=${LATEST#v}   # Remove leading 'v' if present
+
+  # Download the tarball for the latest version
   TGZ="quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
   curl -L -o "$TGZ" "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/${TGZ}"
+
+  # Extract Quarto locally
   tar -xzf "$TGZ"
   mkdir -p "$HOME/quarto"
   mv "quarto-${QUARTO_VERSION}"/* "$HOME/quarto/"
+
+  # Add Quarto to PATH
   export PATH="$HOME/quarto/bin:$PATH"
-  
-  # Render the site
+
+  # Confirm installation and render site
   quarto --version
   quarto render
   """
