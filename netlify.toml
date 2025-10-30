@@ -4,7 +4,7 @@
   publish = "_site"
   command = """
   # Fetch the latest Quarto release tag from GitHub
-  LATEST=$(curl -s https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest | grep -Po '"tag_name": "\K[^"]+')
+  LATEST=$(curl -s https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest | grep -Po '\"tag_name\": \"\\K[^\"]+')
   QUARTO_VERSION=${LATEST#v}   # Remove leading 'v' if present
 
   # Download the tarball for the latest version
